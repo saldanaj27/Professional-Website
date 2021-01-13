@@ -1,6 +1,21 @@
 /* Master Styles */
 
+/* the text of everything */
 body {
     font-family: "Lato", sans-serif;
     margin: 0px;
+}
+
+/* Nav Styles */
+.nav-wrapper {
+    /* allows us to change size of screen and still maintain relative position */
+    display: flex;
+    /* puts it to the other side of the page */
+    justify-content: space-between;
+}
+
+/* About Page */
+.two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
