@@ -6,6 +6,10 @@ body {
     margin: 0px;
 }
 
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
 
 /* NAV STYLES */
 .nav-wrapper {
@@ -70,4 +74,13 @@ body {
 .two-column {
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+
+/* this targets just the image */
+.profile-image img{
+    width: 100%;
+}
+
+.profile-content {
+    padding: 30px;
 }
