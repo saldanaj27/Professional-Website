@@ -1,5 +1,6 @@
 /* MASTER STYLES */
 
+
 /* the text of everything */
 body {
     font-family: "Lato", sans-serif;
@@ -10,6 +11,7 @@ body {
     display: grid;
     grid-template-columns: 1fr;
 }
+
 
 /* NAV STYLES */
 .nav-wrapper {
@@ -70,6 +72,14 @@ body {
 }
 
 
+/* PROJECT STYLES */
+.project-items {
+    display: grid;
+    /* i want three columns */
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
 /* ABOUT PAGE */
 .two-column {
     display: grid;
@@ -78,7 +88,9 @@ body {
 
 /* this targets just the image */
 .profile-image img{
-    width: 100%;
+    padding-left: 50px;
+    width: 60%;
+    height: 90%;
 }
 
 .profile-content {
