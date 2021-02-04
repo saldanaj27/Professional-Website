@@ -24,12 +24,12 @@ body {
 }
 
 .left-side {
-    /* puts both nav sites next to each other */
+    /* it puts them in the same row and is now flexible */
     display: flex;
 }
 
 /* the side of the nav links */
-.nav-wrapper >.left-side > div {
+.nav-wrapper > .left-side > div {
     margin-right: 20px;
     font-size: 0.9em;
     text-transform: uppercase;
@@ -61,22 +61,65 @@ body {
     color: black;
 }
 
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-menu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: #ddd;
+}
+
+.nav-link:hover .dropdown-menu {
+    display: block;
+}
+
+
 /* the border stays if we are on the active nav link */
 .active-nav-link {
     border-bottom: 1px solid black;
 }
 
-/* it is also painted black */
+/* it stays black if active */
 .active-nav-link a {
     color: black !important;
 }
 
 
+
 /* PROJECT STYLES */
-.project-items {
-    display: grid;
-    /* i want three columns */
-    grid-template-columns: 1fr 1fr 1fr;
+.project-item {
+    /* testing purposes */
+    border: 1px solid black;
+    
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.project-image {
+    /* centers the image */
+    margin-left: auto;
+    margin-right: auto;
+}
+.project-image img {
+    width: 300px;
+    height: 400px;
+}
+
+.caption {
+    display: block;
 }
 
 
@@ -89,8 +132,8 @@ body {
 /* this targets just the image */
 .profile-image img{
     padding-left: 50px;
-    width: 60%;
-    height: 90%;
+    width: 70%;
+    height: 100%;
 }
 
 .profile-content {
